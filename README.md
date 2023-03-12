@@ -1,2 +1,2 @@
-# ironhack_miniproj02_olist_data_analysis
+# Case Study: OList
  

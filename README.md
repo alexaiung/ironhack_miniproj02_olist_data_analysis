@@ -474,6 +474,128 @@ These two tables show us that the distance is very relevant, since the worst sit
 ![heatmap distancia atrasos](https://user-images.githubusercontent.com/110355804/224564559-1e07550e-ffde-4124-9f49-62d381efe0bc.png)
 
 
+## Second Analysis: The relevance of the product category
+The late deliveries may be related not only to the distance, but to the type of product which is being sold. The following table illustrates that this hypothesis is correct:
+
+Top-10 Categories by Quantity of Late Deliveries:
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>product_category_name</th>
+      <th>qtd_total</th>
+      <th>atraso</th>
+      <th>taxa_atrasos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>audio</td>
+      <td>364</td>
+      <td>46.0</td>
+      <td>0.1264</td>
+    </tr>
+    <tr>
+      <td>fashion_underwear_e_moda_praia</td>
+      <td>131</td>
+      <td>16.0</td>
+      <td>0.1221</td>
+    </tr>
+    <tr>
+      <td>artigos_de_natal</td>
+      <td>153</td>
+      <td>18.0</td>
+      <td>0.1176</td>
+    </tr>
+    <tr>
+      <td>livros_tecnicos</td>
+      <td>267</td>
+      <td>29.0</td>
+      <td>0.1086</td>
+    </tr>
+    <tr>
+      <td>casa_conforto</td>
+      <td>434</td>
+      <td>44.0</td>
+      <td>0.1014</td>
+    </tr>
+    <tr>
+      <td>construcao_ferramentas_iluminacao</td>
+      <td>304</td>
+      <td>30.0</td>
+      <td>0.0987</td>
+    </tr>
+    <tr>
+      <td>alimentos</td>
+      <td>510</td>
+      <td>49.0</td>
+      <td>0.0961</td>
+    </tr>
+    <tr>
+      <td>eletronicos</td>
+      <td>2767</td>
+      <td>266.0</td>
+      <td>0.0961</td>
+    </tr>
+    <tr>
+      <td>beleza_saude</td>
+      <td>9670</td>
+      <td>858.0</td>
+      <td>0.0887</td>
+    </tr>
+    <tr>
+      <td>moveis_escritorio</td>
+      <td>1691</td>
+      <td>149.0</td>
+      <td>0.0881</td>
+    </tr>
+  </tbody>
+</table>
+
+Top-5 Categories with the Better Late Deliveries Rates:
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>product_category_name</th>
+      <th>qtd_total</th>
+      <th>atraso</th>
+      <th>taxa_atrasos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>moveis_cozinha_area_de_servico_jantar_e_jardim</td>
+      <td>281</td>
+      <td>12.0</td>
+      <td>0.0427</td>
+    </tr>
+    <tr>
+      <td>agro_industria_e_comercio</td>
+      <td>212</td>
+      <td>9.0</td>
+      <td>0.0425</td>
+    </tr>
+    <tr>
+      <td>market_place</td>
+      <td>311</td>
+      <td>13.0</td>
+      <td>0.0418</td>
+    </tr>
+    <tr>
+      <td>telefonia_fixa</td>
+      <td>264</td>
+      <td>11.0</td>
+      <td>0.0417</td>
+    </tr>
+    <tr>
+      <td>climatizacao</td>
+      <td>297</td>
+      <td>11.0</td>
+      <td>0.0370</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 ## Conclusion
 

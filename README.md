@@ -599,8 +599,6 @@ Top-5 Categories with the Better Late Deliveries Rates:
 
 The displayed data shows us that some product categories are more prone to late deliveries. Interestingly, this is not related with the dimensions of the product: some categories, such as 'fashion_underwear' and 'technical books', are relatively small products. On the other hand, in the list of the 5 categories with the least late deliveries rates, we have large products categories such as 'construction_tools_safety' and 'agro_industry_and_commerce'.
 
-## 
-
 
 ## Conclusion
 

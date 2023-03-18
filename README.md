@@ -599,7 +599,97 @@ Top-5 Categories with the Better Late Deliveries Rates:
 
 The displayed data shows us that some product categories are more prone to late deliveries. Interestingly, this is not related with the dimensions of the product: some categories, such as 'fashion_underwear' and 'technical books', are relatively small products. On the other hand, in the list of the 5 categories with the least late deliveries rates, we have large products categories such as 'construction_tools_safety' and 'agro_industry_and_commerce'.
 
+## Third Analysis: The customer satisfaction and the late deliveries
+Our third analysis is about the impact of the late deliveries and the review that the customers gave. This allowed us to understand how much they value deliveries on time, allowing to think of the need for better date deliveries estimates. The following table shows us the mean score given if the product was delivered late or not, while the second table shows us the proportion of late deliveries according to each score given (from 1 to 5).
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>qtd</th>
+      <th>late?</th>
+      <th>mean_score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>71916</td>
+      <td>0</td>
+      <td>4.2121</td>
+    </tr>
+    <tr>
+      <td>6000</td>
+      <td>1</td>
+      <td>2.5578</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>review_score</th>
+      <th>total_reviews</th>
+      <th>late?</th>
+      <th>proportion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>9001</td>
+      <td>2786.0</td>
+      <td>0.3095</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2468</td>
+      <td>462.0</td>
+      <td>0.1872</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>6413</td>
+      <td>689.0</td>
+      <td>0.1074</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>15080</td>
+      <td>745.0</td>
+      <td>0.0494</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>44954</td>
+      <td>1318.0</td>
+      <td>0.0293</td>
+    </tr>
+  </tbody>
+</table>
+
+![barplot media reviews](https://user-images.githubusercontent.com/110355804/226129895-acffb6a4-59a8-440c-a73c-d2952777b554.png)
+
+![barplot soma review proporcao](https://user-images.githubusercontent.com/110355804/226129902-cea3d983-10d9-4a0a-b1d7-351abfd06174.png)
+
+With the intention of deepening the analysis, we calculated the impact that the scores would have with 50% less late deliveries. The estimated mean score are in the following table:
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Current Mean</th>
+      <th>Mean - 50% less late deliveries</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4.084709</td>
+      <td>4.148404</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Conclusion
+Our analysis showed how much the late deliveries impact in the overall experience of the customers. There are definitely certain correlations between the recurrence of delayed deliveries, the distance of seller and customer, and the category of the product; however, more analysis is needed so we can understand what of it is just a correlation and what is causality. It is interesting compare the data about distance and product categories, so we can see if the delays are somehow caused not by the product category but by the distance that they usually travel.
 
+In more concrete terms, we already see that there is a huge amount of delays when the seller or the customer are in the northeast region of Brazil. This could lead to better decision-making, prioritizing the search for new sellers in the area, and a better delivery system. This will impact positively the customer experience.
 
